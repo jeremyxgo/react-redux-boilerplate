@@ -1,7 +1,7 @@
 {
-  "name": "react-redux-boilerplate",
+  "name": "react-spa-boilerplate",
   "version": "0.0.1",
-  "description": "React Redux Boilerplate",
+  "description": "A boilerplate for building React single-page application",
   "main": "/src/index.js",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack -p",
