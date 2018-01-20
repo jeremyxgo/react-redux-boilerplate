@@ -1,4 +1,4 @@
-import { select, put, fork, takeEvery } from 'redux-saga/effects';
+import { all, put, takeEvery } from 'redux-saga/effects';
 import {
   UPDATE_COUNT_REQUEST,
   updateCountSuccess,
@@ -7,9 +7,7 @@ import {
 
 function* updateCount(action) {
   try {
-    const state = yield select();
-    const { count } = state.someReducer;
-    const { increment } = action.payload;
+    const { newCount } = action.payload;
 
     yield new Promise((resolve, reject) => {
       setTimeout(() => {
@@ -17,16 +15,14 @@ function* updateCount(action) {
       }, 250);
     });
     
-    yield put(updateCountSuccess(count + increment));
+    yield put(updateCountSuccess(newCount));
   } catch (e) {
     yield put(updateCountFailure());
   }
 }
 
-function* updateCountRequestListener() {
-  yield takeEvery(UPDATE_COUNT_REQUEST, updateCount);
-}
-
-export default function*() {
-  yield fork(updateCountRequestListener);
+export default function* () {
+  yield all([
+    takeEvery(UPDATE_COUNT_REQUEST, updateCount),
+  ]);
 }

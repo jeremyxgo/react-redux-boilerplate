@@ -6,12 +6,11 @@ export default class Counter extends React.Component {
   static propTypes = {
     status: PropTypes.string.isRequired,
     count: PropTypes.number.isRequired,
-    increase: PropTypes.func.isRequired,
-    decrease: PropTypes.func.isRequired,
+    updateCount: PropTypes.func.isRequired,
   }
 
   state = {
-    nanimate: false,
+    animate: false,
   }
 
   componentWillReceiveProps(nextProps) {
@@ -26,6 +25,24 @@ export default class Counter extends React.Component {
     }
   }
 
+  increase = () => {
+    const {
+      count,
+      updateCount,
+    } = this.props;
+
+    updateCount(count + 1);
+  }
+
+  decrease = () => {
+    const {
+      count,
+      updateCount,
+    } = this.props;
+
+    updateCount(count - 1);
+  }
+
   render() {
     const {
       animate
@@ -33,8 +50,6 @@ export default class Counter extends React.Component {
     const {
       status,
       count,
-      increase,
-      decrease,
     } = this.props;
 
     return (
@@ -42,8 +57,8 @@ export default class Counter extends React.Component {
         <Display fontSize="1rem">{status}</Display>
         <Display fontSize="6rem" animate={animate}>{count}</Display>
         <ButtonGroup>
-          <Button bgColor="#d0d0d0" onClick={increase}>+</Button>
-          <Button bgColor="#a0a0a0" onClick={decrease}>-</Button>
+          <Button bgColor="#d0d0d0" onClick={this.increase}>+</Button>
+          <Button bgColor="#a0a0a0" onClick={this.decrease}>-</Button>
         </ButtonGroup>
       </StyledCounter>
     );
@@ -59,9 +74,10 @@ const StyledCounter = styled.div`
 
 const Display = styled.div`
   font-size: ${props => props.fontSize};
-  color: ${props => props.animate ? '#33d6f5' : '#000000'};
+  color: ${props => props.animate ? '#61dafb' : '#282c34'};
   background-color: #ffffff;
   text-align: center;
+  margin-bottom: 1px;
   padding: 1rem;
   transition: color .25s;
 `;
@@ -72,14 +88,15 @@ const ButtonGroup = styled.div`
 
 const Button = styled.div`
   font-size: 3rem;
-  min-width: 120px;
-  background-color: ${props => props.bgColor || '#cccccc'};
+  color: #ffffff;
+  background-color: #282c34;
+  width: 100px;
   text-align: center;
-  padding: 0rem 2rem;
-  cursor: pointer;
+  transition: background-color .25s;
 
   &:hover {
     color: #ffffff;
-    background-color: #33d6f5;
+    background-color: #61dafb;
+    cursor: pointer;
   }
 `;

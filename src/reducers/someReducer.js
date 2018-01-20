@@ -22,7 +22,7 @@ export default (state = defaultState, action) => {
       return {
         ...state,
         status: 'UPDATE SUCCESS',
-        count: payload.count,
+        count: payload.newCount,
       };
     case UPDATE_COUNT_FAILURE:
       return {

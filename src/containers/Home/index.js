@@ -8,16 +8,14 @@ class Home extends React.Component {
     const {
       status,
       count,
-      increase,
-      decrease,
+      updateCount,
     } = this.props;
 
     return (
       <Counter
         status={status}
         count={count}
-        increase={increase}
-        decrease={decrease}
+        updateCount={updateCount}
       />
     );
   }
@@ -32,11 +30,8 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
-    increase: () => {
-      dispatch(updateCountRequest(1));
-    },
-    decrease: () => {
-      dispatch(updateCountRequest(-1));
+    updateCount: (newCount) => {
+      dispatch(updateCountRequest(newCount));
     },
   };
 };

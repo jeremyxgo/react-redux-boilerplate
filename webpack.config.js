@@ -14,7 +14,7 @@ switch (NODE_ENV) {
     break;
 }
 
-var appName = 'react-redux-boilerplate';
+var appName = 'react-spa-boilerplate';
 var appScriptDir = 'scripts';
 
 var config = {
