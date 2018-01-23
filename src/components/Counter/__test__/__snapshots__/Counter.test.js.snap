@@ -1,0 +1,257 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Counter Component render 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Counter
+    count={0}
+    status="Testing"
+    updateCount={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <styled.div
+          fontSize="1rem"
+        >
+          Testing
+        </styled.div>,
+        <styled.div
+          animate={false}
+          fontSize="6rem"
+        >
+          0
+        </styled.div>,
+        <styled.div>
+          <styled.div
+            bgColor="#d0d0d0"
+            onClick={[Function]}
+          >
+            +
+          </styled.div>
+          <styled.div
+            bgColor="#a0a0a0"
+            onClick={[Function]}
+          >
+            -
+          </styled.div>
+        </styled.div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "Testing",
+          "fontSize": "1rem",
+        },
+        "ref": null,
+        "rendered": "Testing",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "animate": false,
+          "children": 0,
+          "fontSize": "6rem",
+        },
+        "ref": null,
+        "rendered": 0,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <styled.div
+              bgColor="#d0d0d0"
+              onClick={[Function]}
+            >
+              +
+            </styled.div>,
+            <styled.div
+              bgColor="#a0a0a0"
+              onClick={[Function]}
+            >
+              -
+            </styled.div>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "bgColor": "#d0d0d0",
+              "children": "+",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "+",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "bgColor": "#a0a0a0",
+              "children": "-",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "-",
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <styled.div
+            fontSize="1rem"
+          >
+            Testing
+          </styled.div>,
+          <styled.div
+            animate={false}
+            fontSize="6rem"
+          >
+            0
+          </styled.div>,
+          <styled.div>
+            <styled.div
+              bgColor="#d0d0d0"
+              onClick={[Function]}
+            >
+              +
+            </styled.div>
+            <styled.div
+              bgColor="#a0a0a0"
+              onClick={[Function]}
+            >
+              -
+            </styled.div>
+          </styled.div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Testing",
+            "fontSize": "1rem",
+          },
+          "ref": null,
+          "rendered": "Testing",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "animate": false,
+            "children": 0,
+            "fontSize": "6rem",
+          },
+          "ref": null,
+          "rendered": 0,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <styled.div
+                bgColor="#d0d0d0"
+                onClick={[Function]}
+              >
+                +
+              </styled.div>,
+              <styled.div
+                bgColor="#a0a0a0"
+                onClick={[Function]}
+              >
+                -
+              </styled.div>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "bgColor": "#d0d0d0",
+                "children": "+",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "+",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "bgColor": "#a0a0a0",
+                "children": "-",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "-",
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

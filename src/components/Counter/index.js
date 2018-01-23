@@ -65,14 +65,14 @@ export default class Counter extends React.Component {
   }
 }
 
-const StyledCounter = styled.div`
+export const StyledCounter = styled.div`
   margin: auto;
   display: flex;
   flex-direction: column;
   align-self: center;
 `;
 
-const Display = styled.div`
+export const Display = styled.div`
   font-size: ${props => props.fontSize};
   color: ${props => props.animate ? '#61dafb' : '#282c34'};
   background-color: #ffffff;
@@ -82,11 +82,11 @@ const Display = styled.div`
   transition: color .25s;
 `;
 
-const ButtonGroup = styled.div`
+export const ButtonGroup = styled.div`
   display: flex;
 `;
 
-const Button = styled.div`
+export const Button = styled.div`
   font-size: 3rem;
   color: #ffffff;
   background-color: #282c34;
