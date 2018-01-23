@@ -4,14 +4,16 @@
 
 ## Features
 
-* Core - [React](https://reactjs.org/)
-* State management - [Redux](https://redux.js.org/)
-* State persistence - [Redux Persist](https://github.com/rt2zz/redux-persist)
-* Routing - [React Router](https://reacttraining.com/react-router/)
-* Next generation JavaScript - [Babel](https://babeljs.io)
-* HMR - [React Hot Loader](http://gaearon.github.io/react-hot-loader/)
+* Core - [React](https://reactjs.org)
+* State Management - [Redux](https://redux.js.org)
+* State Persistence - [Redux Persist](https://github.com/rt2zz/redux-persist)
+* Side Effects Handling - [Redux-Saga](https://redux-saga.js.org)
+* Routing - [React Router](https://reacttraining.com/react-router)
+* Next Generation JavaScript - [Babel](https://babeljs.io)
+* HMR - [React Hot Loader](http://gaearon.github.io/react-hot-loader)
 * CSS-in-JS - [styled-components](https://www.styled-components.com)
-* Code bundler - [Webpack](https://webpack.js.org)
+* Code Bundler - [Webpack](https://webpack.js.org)
+* Testing - [Jest](https://facebook.github.io/jest), [Enzyme](http://airbnb.io/enzyme)
 
 ## Usage
 
@@ -42,6 +44,15 @@ $ yarn run build:dev
 
 # for production
 $ yarn run build
+```
+
+Run tests:
+```bash
+# run all tests
+$ yarn test
+
+# watch files for changes and rerun tests
+$ yarn run test:watch
 ```
 
 Start dev server:
