@@ -5,14 +5,13 @@
 ## Features
 
 * Core - [React](https://reactjs.org)
+* Code Bundler - [Parcel](https://parceljs.org)
+* CSS-in-JS - [styled-components](https://www.styled-components.com)
+* ES6+ Support - [Babel](https://babeljs.io)
+* Routing - [React Router](https://reacttraining.com/react-router)
 * State Management - [Redux](https://redux.js.org)
 * State Persistence - [Redux Persist](https://github.com/rt2zz/redux-persist)
 * Side Effects Handling - [Redux-Saga](https://redux-saga.js.org)
-* Routing - [React Router](https://reacttraining.com/react-router)
-* Next Generation JavaScript - [Babel](https://babeljs.io)
-* HMR - [React Hot Loader](http://gaearon.github.io/react-hot-loader)
-* CSS-in-JS - [styled-components](https://www.styled-components.com)
-* Code Bundler - [Webpack](https://webpack.js.org)
 * Testing - [Jest](https://facebook.github.io/jest), [Enzyme](http://airbnb.io/enzyme)
 
 ## Usage
@@ -24,29 +23,11 @@ Setup:
 $ git clone https://github.com/jeremyxgo/react-spa-boilerplate.git your-project-name
 
 # install dependencies
-cd your-project-name
-yarn install
+$ cd your-project-name
+$ yarn install
 ```
 
-Configure Webpack:
-```bash
-# for development
-$ cp webpack.config.example.js webpack.config.dev.js
-
-# for production
-$ cp webpack.config.example.js webpack.config.prod.js
-```
-
-Output bundle:
-```bash
-# for development
-$ yarn run build:dev
-
-# for production
-$ yarn run build
-```
-
-Run tests:
+Testing:
 ```bash
 # run all tests
 $ yarn test
@@ -55,12 +36,17 @@ $ yarn test
 $ yarn run test:watch
 ```
 
-Start dev server:
+Building:
 ```bash
+# output assets to ./dist
+$ yarn build
+```
+
+Development:
+```bash
+# start development server at http://localhost:3001
 $ yarn start
 ```
-Now the app is running at `http://{webpackDevServerHost}:{webpackdevServerPort}`
-
 
 ## License
 

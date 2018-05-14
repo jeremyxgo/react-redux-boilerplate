@@ -1,11 +1,9 @@
 {
   "presets": [
-    ["env", {"modules": false}],
-    "react",
     "stage-0"
   ],
   "plugins": [
-    "react-hot-loader/babel"
+    "transform-class-properties"
   ],
   "env": {
     "test": {
