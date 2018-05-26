@@ -22,7 +22,7 @@ injectGlobal`
     display: flex;
   }
 
-  #root {
+  #app-root {
     background-color: #efefef;
     display: flex;
     flex: 1 1 auto;
