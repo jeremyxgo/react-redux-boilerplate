@@ -44,7 +44,7 @@ $ yarn build
 
 Development:
 ```bash
-# start development server at http://localhost:3001
+# start development server at http://localhost:3000
 $ yarn start
 ```
 

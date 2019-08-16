@@ -1,10 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Switch, Route, withRouter } from 'react-router-dom';
-import { injectGlobal } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 import Home from '../Home';
 
-injectGlobal`
+const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
     position: relative;
@@ -33,9 +33,12 @@ injectGlobal`
 class App extends React.Component {
   render() {
     return (
-      <Switch>
-        <Route exact path={`/`} component={Home}/>
-      </Switch>
+      <React.Fragment>
+        <Switch>
+          <Route exact path={`/`} component={Home}/>
+        </Switch>
+        <GlobalStyle/>
+      </React.Fragment>
     );
   }
 }
