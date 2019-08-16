@@ -1,4 +1,9 @@
-# React SPA Boilerplate
+# WARNING #
+This project is not maintained anymore.
+
+---
+
+# React Redux Boilerplate
 
 > A boilerplate for building React single-page application.
 
@@ -20,7 +25,7 @@ Setup:
 
 ```bash
 # clone the repo
-$ git clone https://github.com/jeremyxgo/react-spa-boilerplate.git your-project-name
+$ git clone https://github.com/jeremyxgo/react-redux-boilerplate.git your-project-name
 
 # install dependencies
 $ cd your-project-name

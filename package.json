@@ -1,5 +1,5 @@
 {
-  "name": "react-spa-boilerplate",
+  "name": "react-redux-boilerplate",
   "version": "0.0.1",
   "description": "A boilerplate for building React single-page application",
   "main": "/src/index.js",
